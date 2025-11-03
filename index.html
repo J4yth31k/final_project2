@@ -29,65 +29,134 @@
 
   <!-- Hero / About section -->
 <section class="hero" id="about">
-  <div class="hero-content">
-    <h1>Beautiful React Templates for <span class="highlight">you</span>.</h1>
-    <p>Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.</p>
-    <form class="signup-form">
-      <input type="email" placeholder="Your E‑mail Address">
-      <button type="submit">Get Started</button>
-    </form>
-    <div class="trusted">
-      <span>Our trusted customers</span>
-      <div class="logos">
-        <img src="./assets/press-logos.png" alt="Our trusted customers">
+  <div class="container hero-inner">
+    <div class="hero-content">
+      <span class="label">About</span>
+      <h1>
+        Beautiful React Templates for <span class="highlight">you.</span>
+      </h1>
+      <p>
+        Our templates are easy to set up, understand, and customize. Fully
+        modular components with a variety of pages and components.
+      </p>
+      <form class="signup-form">
+        <input type="email" placeholder="Your E-mail Address" required />
+        <button type="submit">Get Started</button>
+      </form>
+
+      <div class="trusted">
+        <span class="trusted-text">Our Trusted Customers</span>
+        <div class="logos">
+          <img
+            src="./assets/customers-logo-strip.680ac7c2e8ae28161d2c.png"
+            alt="Trusted company logos"
+          />
+        </div>
       </div>
     </div>
-  </div>
-  <div class="hero-image">
-    <!-- use the desk illustration here, not a screenshot -->
-    <img src="./assets/prototype-illustration.21bc4b3f612a2f257c3d361067582485.svg" alt="Designer at desk illustration">
+
+    <div class="hero-image">
+      <img
+        src="./assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg"
+        alt="Designer at desk illustration"
+      />
+    </div>
   </div>
 </section>
 
+<!-- Features -->
+<section class="features" id="features">
+  <div class="container">
+    <div class="features-header">
+      <span class="label">Features</span>
+      <h2>We Have <span class="highlight">Amazing Service</span>.</h2>
+      <p class="section-intro">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </div>
 
-  <!-- Features -->
-  <section class="features" id="features">
-    <div class="feature">
-      <div class="icon" style="font-size:40px;">⚙️</div>
-      <h3>Customize</h3>
-      <p>Set up quickly with clear docs and flexible components.</p>
+    <div class="features-grid">
+      <div class="feature">
+        <img
+          src="./assets/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg"
+          alt="Secure icon"
+          class="feature-icon"
+        />
+        <h3>Secure</h3>
+        <p>
+          Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis
+          nostrud.
+        </p>
+      </div>
+
+      <div class="feature">
+        <img
+          src="./assets/support-icon.f9253ffa8cb6ffde5bbaa05eb5136375.svg"
+          alt="Support icon"
+          class="feature-icon"
+        />
+        <h3>24/7 Support</h3>
+        <p>
+          Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis
+          nostrud.
+        </p>
+      </div>
+
+      <div class="feature">
+        <img
+          src="./assets/customize-icon.367468c90fd796009b97fbfba67b2c6a.svg"
+          alt="Customizable icon"
+          class="feature-icon"
+        />
+        <h3>Customizable</h3>
+        <p>
+          Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis
+          nostrud.
+        </p>
+      </div>
+
+      <div class="feature">
+        <img
+          src="./assets/reliable-icon.1367510a8f0a1bec76dc425d25f92f43.svg"
+          alt="Reliable icon"
+          class="feature-icon"
+        />
+        <h3>Reliable</h3>
+        <p>
+          Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis
+          nostrud.
+        </p>
+      </div>
+
+      <div class="feature">
+        <img
+          src="./assets/fast-icon.dbb971a73d4805d2fc3bcdacdb55beba.svg"
+          alt="Fast icon"
+          class="feature-icon"
+        />
+        <h3>Fast</h3>
+        <p>
+          Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis
+          nostrud.
+        </p>
+      </div>
+
+      <div class="feature">
+        <img
+          src="./assets/simple-icon.673b7e1750b2a4ef32907fc164828d00.svg"
+          alt="Simple icon"
+          class="feature-icon"
+        />
+        <h3>Easy</h3>
+        <p>
+          Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis
+          nostrud.
+        </p>
+      </div>
     </div>
-    <div class="feature">
-      <div class="icon" style="font-size:40px;">⚡</div>
-      <h3>Fast</h3>
-      <p>Optimized assets and code-splitting for great performance.</p>
-    </div>
-    <div class="feature">
-      <div class="icon" style="font-size:40px;">🔍</div>
-      <h3>Easy</h3>
-      <p>Simple patterns that are easy to read, test, and extend.</p>
-    </div>
-    <div class="feature">
-      <img src="./assets/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg" alt="Security shield icon" class="feature-icon">
-      <h3>Secure</h3>
-      <p>Best‑practice auth, sensible defaults and safe dependencies.</p>
-    </div>
-    <div class="feature">
-      <img src="./assets/simple-icon.673b7e1750b2a4ef32907fc164828d00.svg" alt="Simple icon" class="feature-icon">
-      <h3>Simple API</h3>
-      <p>Clean APIs that stay out of your way while you build.</p>
-    </div>
-    <div class="feature">
-      <img src="./assets/support-icon.f9253ffa8cb6ffde5bbaa05eb5136375.svg" alt="Support icon" class="feature-icon">
-      <h3>Support</h3>
-      <p>Friendly help when you need it, with quick turnaround.</p>
-    </div>
-    <div class="feature">
-      <img src="./assets/reliable-icon.1367510a8f0a1bec76dc425d25f92f43.svg" alt="Reliable icon" class="feature-icon">
-      <h3>Reliable</h3>
-      <p>Versioned releases, CI, and tests to keep your app stable.</p>
-    </div>
-  </section>
+  </div>
+</section>
 
   <!-- Quality section -->
 <section class="quality" id="quality">
