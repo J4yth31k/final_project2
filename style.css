@@ -237,6 +237,26 @@ section {
   min-width: 300px;
   text-align: center;
 }
+.quality-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.quality-content {
+  flex: 1;
+  max-width: 500px;
+}
+
+.quality-image img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
 
 /* ------------------------------
    STEPS SECTION
@@ -288,6 +308,61 @@ section {
 .step h4 {
   font-size: 1.125rem;
   margin-bottom: 4px;
+}
+.steps-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.steps-content {
+  flex: 1;
+  max-width: 500px;
+}
+
+.steps-image img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+}
+
+.steps-list {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.step-number {
+  background: #6415ff;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 9999px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.125rem;
+  flex-shrink: 0;
+}
+
+.step-text h4 {
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.step-text p {
+  color: #4a5568;
+  font-size: 1rem;
 }
 
 /* ------------------------------
