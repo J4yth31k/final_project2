@@ -1,4 +1,4 @@
-/* === GLOBAL STYLES === */
+/* === GLOBAL RESET === */
 * {
   margin: 0;
   padding: 0;
@@ -28,26 +28,8 @@ h1, h2, h3, h4 {
   color: #111827;
 }
 
-h1 {
-  font-size: 3rem;
-  line-height: 1.2;
-}
-
-h2 {
-  font-size: 2.25rem;
-  margin-bottom: 1rem;
-}
-
-p {
-  color: #4b5563;
-  font-size: 1rem;
-}
-
-button, .btn-primary, .btn-outline {
-  font-family: inherit;
-  cursor: pointer;
-  border: none;
-  transition: all 0.3s ease;
+.highlight {
+  color: #6415ff;
 }
 
 /* === NAVBAR === */
@@ -55,6 +37,7 @@ button, .btn-primary, .btn-outline {
   width: 100%;
   padding: 1.2rem 0;
   border-bottom: 1px solid #e5e7eb;
+  background-color: #fff;
 }
 
 .nav-content {
@@ -70,6 +53,10 @@ button, .btn-primary, .btn-outline {
   font-weight: 700;
   font-size: 1.2rem;
   color: #1f2937;
+}
+
+.logo img {
+  width: 36px;
 }
 
 .nav-links {
@@ -101,7 +88,7 @@ button, .btn-primary, .btn-outline {
 .auth-buttons .signup {
   color: #fff;
   background-color: #6415ff;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1rem;
   border-radius: 9999px;
 }
 
@@ -112,8 +99,6 @@ button, .btn-primary, .btn-outline {
 /* === HERO SECTION === */
 .hero {
   padding: 6rem 0;
-  display: flex;
-  align-items: center;
 }
 
 .hero-content {
@@ -131,10 +116,7 @@ button, .btn-primary, .btn-outline {
 .hero-text h1 {
   font-size: 2.75rem;
   font-weight: 700;
-}
-
-.highlight {
-  color: #6415ff;
+  line-height: 1.2;
 }
 
 .hero-text p {
@@ -164,12 +146,11 @@ button, .btn-primary, .btn-outline {
   color: white;
   padding: 0.8rem 1.5rem;
   font-weight: 600;
-  border-radius: 0 9999px 9999px 0;
+  border: none;
 }
 
 .trusted {
   margin-top: 2rem;
-  text-align: left;
 }
 
 .trusted p {
@@ -280,122 +261,4 @@ button, .btn-primary, .btn-outline {
 
 .number {
   font-size: 3rem;
-  font-weight: 700;
-  color: #d1c4ff;
-}
-
-.step h4 {
-  margin-top: 1rem;
-  color: #111827;
-  font-weight: 600;
-}
-
-/* === PRICING === */
-.pricing {
-  padding: 6rem 0;
-  text-align: center;
-}
-
-.pricing-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 3rem;
-}
-
-.plan {
-  background: #fff;
-  border-radius: 16px;
-  border: 1px solid #e5e7eb;
-  padding: 2.5rem;
-  width: 300px;
-  transition: all 0.3s;
-}
-
-.plan:hover {
-  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
-  transform: translateY(-6px);
-}
-
-.featured {
-  border: 2px solid #6415ff;
-}
-
-.price {
-  font-size: 2rem;
-  font-weight: 700;
-  margin: 1rem 0;
-}
-
-.period {
-  color: #9ca3af;
-}
-
-.plan ul {
-  list-style: none;
-  margin: 1.5rem 0;
-  color: #4b5563;
-}
-
-.plan li {
-  margin: 0.5rem 0;
-}
-
-.btn-primary {
-  background: #6415ff;
-  color: white;
-  padding: 0.8rem 1.5rem;
-  border-radius: 9999px;
-  font-weight: 600;
-}
-
-.btn-primary:hover {
-  background: #520fdc;
-}
-
-/* === TESTIMONIALS === */
-.testimonials {
-  padding: 6rem 0;
-  background: #fafafa;
-  text-align: center;
-}
-
-.testimonials-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.testimonial {
-  background: #fff;
-  border-radius: 12px;
-  padding: 2rem;
-  max-width: 400px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-}
-
-.testimonial-footer {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-.testimonial-footer img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-}
-
-/* === FOOTER === */
-.footer {
-  background: #1f2937;
-  color: white;
-  padding: 4rem 0;
-}
-
-.footer-grid {
-  display:
+  font-weight: 70
