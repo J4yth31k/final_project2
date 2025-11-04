@@ -3,14 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My SaaS - Treact-Inspired Landing Page</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Treact Example</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-  
-<!-- Tailwind CSS CDN -->
-<script src="https://cdn.tailwindcss.com"></script>
-
 <body class="font-sans text-gray-700">
 
 <!-- Navbar -->
@@ -23,7 +18,7 @@
     <a href="#">About</a>
     <a href="#">Blog</a>
     <a href="#">Pricing</a>
-    <a href="#">Contact</a>
+    <a href="#">Contact Us</a>
     <a href="#" class="font-semibold">Login</a>
     <a href="#" class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700">Sign Up</a>
   </nav>
@@ -35,12 +30,17 @@
     <h1 class="text-4xl md:text-5xl font-bold leading-tight text-gray-900">
       Beautiful React Templates for you.
     </h1>
-    <p class="text-gray-600">Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.</p>
+    <p class="text-gray-600">
+      Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.
+    </p>
     <div class="flex space-x-4">
       <input type="text" placeholder="Your email" class="border rounded-lg px-4 py-2 w-64">
       <button class="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700">Get Started</button>
     </div>
-    <img src="customers-logo-strip.680ac7c2e8ae28161d2c.png" alt="Trusted Customers" class="mt-6 w-full max-w-md">
+    <div class="mt-6">
+      <p class="text-sm text-gray-500 uppercase tracking-wider mb-2">Our Trusted Customers</p>
+      <img src="customers-logo-strip.680ac7c2e8ae28161d2c.png" alt="Trusted Customers" class="w-full max-w-md">
+    </div>
   </div>
   <div class="md:w-1/2 mt-10 md:mt-0">
     <img src="design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg" alt="Design Illustration">
@@ -51,7 +51,7 @@
 <section class="px-8 py-16 bg-gray-50 text-center">
   <h2 class="text-3xl font-bold text-gray-900 mb-6">We Have Amazing Service.</h2>
   <p class="text-gray-600 max-w-xl mx-auto mb-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-  <div class="grid md:grid-cols-3 lg:grid-cols-6 gap-8">
+  <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
     <div><img src="shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg" class="mx-auto mb-4"><h3 class="font-semibold">Secure</h3></div>
     <div><img src="support-icon.f9253ffa8cb6ffde5bbaa05eb5136375.svg" class="mx-auto mb-4"><h3 class="font-semibold">24/7 Support</h3></div>
     <div><img src="customize-icon.367468c90fd796009b97fbfba67b2c6a.svg" class="mx-auto mb-4"><h3 class="font-semibold">Customizable</h3></div>
@@ -74,157 +74,173 @@
   </div>
 </section>
 
-  <!-- Steps -->
-  <section class="steps">
-    <div class="container">
-      <span class="label">STEPS</span>
-      <h2>Easy to <span class="highlight">Get Started.</span></h2>
-      <div class="steps-grid">
-        <div class="step">
-          <span class="number">01</span>
-          <h4>Register</h4>
-          <p>Create an account with us using Google or Facebook.</p>
-        </div>
-        <div class="step">
-          <span class="number">02</span>
-          <h4>Download</h4>
-          <p>Browse and download the template that you like from the marketplace.</p>
-        </div>
-        <div class="step">
-          <span class="number">03</span>
-          <h4>Run</h4>
-          <p>Follow the instructions to setup and customize the template to your needs.</p>
-        </div>
-      </div>
+<!-- Steps -->
+<section class="px-8 py-16 bg-gray-50 text-center">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Easy to Get Started.</h2>
+  <div class="flex flex-col md:flex-row justify-center gap-12 mt-8">
+    <div class="flex flex-col items-center">
+      <span class="text-4xl font-bold text-purple-600">01</span>
+      <h3 class="font-semibold text-lg mt-2">Register</h3>
+      <p class="text-gray-600 max-w-xs">Create an account with us using Google or Facebook.</p>
     </div>
-  </section>
+    <div class="flex flex-col items-center">
+      <span class="text-4xl font-bold text-purple-600">02</span>
+      <h3 class="font-semibold text-lg mt-2">Download</h3>
+      <p class="text-gray-600 max-w-xs">Browse and download the template that you like from the marketplace.</p>
+    </div>
+    <div class="flex flex-col items-center">
+      <span class="text-4xl font-bold text-purple-600">03</span>
+      <h3 class="font-semibold text-lg mt-2">Run</h3>
+      <p class="text-gray-600 max-w-xs">Follow the instructions to setup and customize the template to your needs.</p>
+    </div>
+  </div>
+</section>
 
-  <!-- Values -->
-  <section class="values">
-    <div class="container values-content">
-      <div class="values-text">
-        <span class="label">VALUES</span>
-        <h2>We Always Abide by Our <span class="highlight">Principles.</span></h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <div class="value-points">
-          <div class="value-item">
-            <h3>Affordable</h3>
-            <p>We promise to offer you the best rate we can - at par with the industry standard.</p>
-          </div>
-          <div class="value-item">
-            <h3>Professionalism</h3>
-            <p>We assure you that our templates are designed and created by professional designers.</p>
-          </div>
-        </div>
-        <a href="#" class="btn-outline">Learn More</a>
+<!-- Values -->
+<section class="px-8 py-16 flex flex-col md:flex-row items-center">
+  <div class="md:w-1/2 space-y-4">
+    <h2 class="text-3xl font-bold text-gray-900">We Always Abide by Our Principles.</h2>
+    <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div class="space-y-4">
+      <div>
+        <h3 class="font-semibold text-lg">Affordable</h3>
+        <p class="text-gray-600">We promise to offer you the best rate we can — at par with the industry standard.</p>
       </div>
-      <div class="values-img">
-        <img src="./assets/prototype-illustration.21bc4b3f612a2f257c3d361067582485.svg" alt="Values Illustration" />
+      <div>
+        <h3 class="font-semibold text-lg">Professionalism</h3>
+        <p class="text-gray-600">We assure you that our templates are designed and created by professional designers.</p>
       </div>
     </div>
-  </section>
-  
-  <!-- Pricing -->
-  <section class="pricing" id="pricing">
-    <div class="container">
-      <span class="label">PRICING</span>
-      <h2>Reasonable & Flexible <span class="highlight">Plans.</span></h2>
-      <p class="section-subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <div class="pricing-grid">
-        <div class="plan">
-          <h3>PERSONAL</h3>
-          <p class="price">$17.99 <span class="period">/monthly</span></p>
-          <p class="subtext">For Individuals</p>
-          <ul>
-            <li>30 Templates</li>
-            <li>7 Landing Pages</li>
-            <li>12 Internal Pages</li>
-            <li>Basic Assistance</li>
-          </ul>
-          <button class="btn-primary">Buy Now</button>
-        </div>
-        <div class="plan featured">
-          <h3>BUSINESS</h3>
-          <p class="price">$37.99 <span class="period">/monthly</span></p>
-          <p class="subtext">For Small Businesses</p>
-          <ul>
-            <li>60 Templates</li>
-            <li>15 Landing Pages</li>
-            <li>22 Internal Pages</li>
-            <li>Priority Assistance</li>
-          </ul>
-          <button class="btn-primary">Buy Now</button>
-        </div>
-        <div class="plan">
-          <h3>ENTERPRISE</h3>
-          <p class="price">$57.99 <span class="period">/monthly</span></p>
-          <p class="subtext">For Large Companies</p>
-          <ul>
-            <li>90 Templates</li>
-            <li>27 Landing Pages</li>
-            <li>37 Internal Pages</li>
-            <li>Personal Assistance</li>
-          </ul>
-          <button class="btn-primary">Buy Now</button>
-        </div>
-      </div>
-    </div>
-  </section>
+    <button class="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700">Learn More</button>
+  </div>
+  <div class="md:w-1/2 mt-8 md:mt-0">
+    <img src="prototype-illustration.21bc4b3f612a2f257c3d361067582485.svg" alt="Prototype" class="w-full">
+  </div>
+</section>
 
-  <!-- Testimonials -->
-  <section class="testimonials" id="testimonials">
-    <div class="container">
-      <img src="./assets/love-illustration.c759090fa833369ad6ffb6eb19cacb3e.svg" alt="" class="section-illustration" />
-      <span class="label">TESTIMONIALS</span>
-      <h2>Our Clients <span class="highlight">Love Us.</span></h2>
-      <p class="section-subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam.</p>
-      <div class="testimonial-box">
-        <h3>Amazing User Experience</h3>
-        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-        <div class="testimonial-footer">
-          <img src="./assets/photo-1494790108377-be9c29b29330.avif" alt="Charlotte Hale" />
-          <div>
-            <strong>Charlotte Hale</strong>
-            <span>Director, Delos Inc.</span>
-          </div>
-        </div>
-      </div>
+<!-- Pricing -->
+<section class="px-8 py-16 bg-gray-50 text-center">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">Reasonable & Flexible Plans.</h2>
+  <div class="grid md:grid-cols-3 gap-8 mt-8">
+    <!-- Personal -->
+    <div class="border rounded-lg p-6 shadow hover:shadow-lg">
+      <h3 class="font-bold text-xl mb-2">PERSONAL</h3>
+      <p class="text-4xl font-bold text-purple-600 mb-2">$17.99</p>
+      <p class="uppercase text-sm text-gray-500 mb-4">Monthly</p>
+      <ul class="text-gray-600 space-y-1 mb-6">
+        <li>30 Templates</li>
+        <li>7 Landing Pages</li>
+        <li>12 Internal Pages</li>
+        <li>Basic Assistance</li>
+      </ul>
+      <button class="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700">Buy Now</button>
     </div>
-  </section>
 
-  <!-- Footer -->
-  <footer class="footer" id="contact">
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <div class="logo">
-          <img src="./assets/logo-light.d9a5d1b5be5ea077b26864fdfc2e96a4.svg" alt="My SaaS Logo" />
-          <span>My SaaS</span>
-        </div>
-        <p>© 2025 My SaaS. All Rights Reserved.</p>
-      </div>
-      <div class="footer-links">
+    <!-- Business -->
+    <div class="border-2 border-purple-600 rounded-lg p-6 shadow-lg">
+      <h3 class="font-bold text-xl mb-2">BUSINESS</h3>
+      <p class="text-4xl font-bold text-purple-600 mb-2">$37.99</p>
+      <p class="uppercase text-sm text-gray-500 mb-4">Monthly</p>
+      <ul class="text-gray-600 space-y-1 mb-6">
+        <li>60 Templates</li>
+        <li>15 Landing Pages</li>
+        <li>22 Internal Pages</li>
+        <li>Priority Assistance</li>
+      </ul>
+      <button class="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700">Buy Now</button>
+    </div>
+
+    <!-- Enterprise -->
+    <div class="border rounded-lg p-6 shadow hover:shadow-lg">
+      <h3 class="font-bold text-xl mb-2">ENTERPRISE</h3>
+      <p class="text-4xl font-bold text-purple-600 mb-2">$57.99</p>
+      <p class="uppercase text-sm text-gray-500 mb-4">Monthly</p>
+      <ul class="text-gray-600 space-y-1 mb-6">
+        <li>90 Templates</li>
+        <li>27 Landing Pages</li>
+        <li>37 Internal Pages</li>
+        <li>Personal Assistance</li>
+      </ul>
+      <button class="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700">Buy Now</button>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="px-8 py-16 text-center">
+  <img src="love-illustration.c759090fa833369ad6ffb6eb19cacb3e.svg" alt="" class="mx-auto w-32 mb-6">
+  <h2 class="text-3xl font-bold text-gray-900 mb-12">Our Clients <span class="text-purple-600">Love Us.</span></h2>
+  <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+    <div class="bg-gray-50 p-8 rounded-lg shadow text-left">
+      <p class="italic mb-6">“We shipped in half the time. Clean components and great docs.”</p>
+      <div class="flex items-center space-x-4">
+        <img src="photo-1494790108377-be9c29b29330.avif" alt="" class="w-12 h-12 rounded-full object-cover">
         <div>
-          <h4>Main</h4>
-          <a href="#">Blog</a>
-          <a href="#">FAQs</a>
-          <a href="#">Support</a>
-          <a href="#">About Us</a>
-        </div>
-        <div>
-          <h4>Product</h4>
-          <a href="#">Log In</a>
-          <a href="#">Personal</a>
-          <a href="#">Business</a>
-          <a href="#">Team</a>
-        </div>
-        <div>
-          <h4>Legal</h4>
-          <a href="#">GDPR</a>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
-          <a href="#">Disclaimer</a>
+          <strong class="block">Charlotte Hale</strong>
+          <span class="text-gray-500 text-sm">Director, Delos Inc.</span>
         </div>
       </div>
     </div>
-  </footer>
-</body
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-gray-300 px-8 py-12">
+  <div class="grid md:grid-cols-5 gap-8 text-sm">
+    <div>
+      <h4 class="font-semibold text-white mb-3">MAIN</h4>
+      <ul class="space-y-2">
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-semibold text-white mb-3">PRODUCT</h4>
+      <ul class="space-y-2">
+        <li><a href="#">Log In</a></li>
+        <li><a href="#">Personal</a></li>
+        <li><a href="#">Business</a></li>
+        <li><a href="#">Team</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-semibold text-white mb-3">PRESS</h4>
+      <ul class="space-y-2">
+        <li><a href="#">Logos</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Stories</a></li>
+        <li><a href="#">Office</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-semibold text-white mb-3">TEAM</h4>
+      <ul class="space-y-2">
+        <li><a href="#">Career</a></li>
+        <li><a href="#">Founders</a></li>
+        <li><a href="#">Culture</a></li>
+        <li><a href="#">Onboarding</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-semibold text-white mb-3">LEGAL</h4>
+      <ul class="space-y-2">
+        <li><a href="#">GDPR</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Disclaimer</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="flex flex-col md:flex-row justify-between items-center border-t border-gray-700 mt-8 pt-8">
+    <div class="flex items-center space-x-2">
+      <img src="logo-light.d9a5d1b5be5ea077b26864fdfc2e96a4.svg" alt="Logo" class="w-8">
+      <span class="font-semibold text-white">Treact Inc.</span>
+    </div>
+    <p class="text-gray-500 text-sm mt-4 md:mt-0">© 2018 Treact Inc. All Rights Reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
