@@ -7,102 +7,72 @@
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-  <!-- Navbar -->
-  <header class="navbar">
-    <div class="container nav-content">
-      <div class="logo">
-        <img src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="My SaaS Logo" />
-        <span>My SaaS</span>
-      </div>
-      <nav class="nav-links">
-        <a href="#features">Features</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <div class="auth-buttons">
-        <a href="#" class="login">Login</a>
-        <a href="#" class="signup">Sign Up</a>
-      </div>
-    </div>
-  </header>
+  
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container hero-content">
-      <div class="hero-text">
-        <h1>Beautiful React Templates <span class="highlight">for you.</span></h1>
-        <p>Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.</p>
-        <form class="hero-form">
-          <input type="email" placeholder="Your E-mail Address" required />
-          <button type="submit">Get Started</button>
-        </form>
-        <div class="trusted">
-          <p>OUR TRUSTED CUSTOMERS</p>
-          <img src="./assets/customers-logo-strip.680ac7c2e8ae28161d2c.png" alt="Trusted Customers" />
-        </div>
-      </div>
-      <div class="hero-img">
-        <img src="./assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg" alt="Illustration" />
-      </div>
-    </div>
-  </section>
+<body class="font-sans text-gray-700">
 
-  <!-- Features -->
-  <section class="features" id="features">
-    <div class="container">
-      <h2 class="section-heading">We Have Amazing <span class="highlight">Service.</span></h2>
-      <p class="section-subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <div class="features-grid">
-        <div class="feature-item">
-          <img src="./assets/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg" alt="Secure" />
-          <h3>Secure</h3>
-          <p>Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.</p>
-        </div>
-        <div class="feature-item">
-          <img src="./assets/support-icon.f9253ffa8cb6ffde5bbaa05eb5136375.svg" alt="Support" />
-          <h3>24/7 Support</h3>
-          <p>Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.</p>
-        </div>
-        <div class="feature-item">
-          <img src="./assets/customize-icon.367468c90fd796009b97fbfba67b2c6a.svg" alt="Customizable" />
-          <h3>Customizable</h3>
-          <p>Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.</p>
-        </div>
-        <div class="feature-item">
-          <img src="./assets/reliable-icon.1367510a8f0a1bec76dc425d25f92f43.svg" alt="Reliable" />
-          <h3>Reliable</h3>
-          <p>Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.</p>
-        </div>
-        <div class="feature-item">
-          <img src="./assets/fast-icon.dbb971a73d4805d2fc3bcdacdb55beba.svg" alt="Fast" />
-          <h3>Fast</h3>
-          <p>Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.</p>
-        </div>
-        <div class="feature-item">
-          <img src="./assets/simple-icon.673b7e1750b2a4ef32907fc164828d00.svg" alt="Easy" />
-          <h3>Easy</h3>
-          <p>Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+<!-- Navbar -->
+<header class="flex justify-between items-center px-8 py-4">
+  <div class="flex items-center space-x-2">
+    <img src="logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="LOGO" class="w-8">
+    <span class="font-bold text-xl text-gray-800">Treact</span>
+  </div>
+  <nav class="hidden md:flex space-x-8 text-gray-600">
+    <a href="#">About</a>
+    <a href="#">Blog</a>
+    <a href="#">Pricing</a>
+    <a href="#">Contact</a>
+    <a href="#" class="font-semibold">Login</a>
+    <a href="#" class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700">Sign Up</a>
+  </nav>
+</header>
 
-  <!-- Quality Work -->
-  <section class="quality">
-    <div class="container quality-content">
-      <div class="quality-text">
-        <span class="label">QUALITY WORK</span>
-        <h2>Designed & Developed by <span class="highlight">Professionals.</span></h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quam cupiditate commodi qui excepturi laborum adipisci officiis, corporis possimus.</p>
-        <a href="#" class="btn-outline">Learn More</a>
-      </div>
-      <div class="quality-img">
-        <img src="./assets/hero-screenshot-2.241aac1fbc66db29d873.png" alt="Dashboard Screenshot" />
-      </div>
+<!-- Hero -->
+<section class="flex flex-col md:flex-row items-center justify-between px-8 py-16">
+  <div class="md:w-1/2 space-y-6">
+    <h1 class="text-4xl md:text-5xl font-bold leading-tight text-gray-900">
+      Beautiful React Templates for you.
+    </h1>
+    <p class="text-gray-600">Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.</p>
+    <div class="flex space-x-4">
+      <input type="text" placeholder="Your email" class="border rounded-lg px-4 py-2 w-64">
+      <button class="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700">Get Started</button>
     </div>
-  </section>
+    <img src="customers-logo-strip.680ac7c2e8ae28161d2c.png" alt="Trusted Customers" class="mt-6 w-full max-w-md">
+  </div>
+  <div class="md:w-1/2 mt-10 md:mt-0">
+    <img src="design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg" alt="Design Illustration">
+  </div>
+</section>
+
+<!-- Features -->
+<section class="px-8 py-16 bg-gray-50 text-center">
+  <h2 class="text-3xl font-bold text-gray-900 mb-6">We Have Amazing Service.</h2>
+  <p class="text-gray-600 max-w-xl mx-auto mb-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  <div class="grid md:grid-cols-3 lg:grid-cols-6 gap-8">
+    <div><img src="shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg" class="mx-auto mb-4"><h3 class="font-semibold">Secure</h3></div>
+    <div><img src="support-icon.f9253ffa8cb6ffde5bbaa05eb5136375.svg" class="mx-auto mb-4"><h3 class="font-semibold">24/7 Support</h3></div>
+    <div><img src="customize-icon.367468c90fd796009b97fbfba67b2c6a.svg" class="mx-auto mb-4"><h3 class="font-semibold">Customizable</h3></div>
+    <div><img src="reliable-icon.1367510a8f0a1bec76dc425d25f92f43.svg" class="mx-auto mb-4"><h3 class="font-semibold">Reliable</h3></div>
+    <div><img src="fast-icon.dbb971a73d4805d2fc3bcdacdb55beba.svg" class="mx-auto mb-4"><h3 class="font-semibold">Fast</h3></div>
+    <div><img src="simple-icon.673b7e1750b2a4ef32907fc164828d00.svg" class="mx-auto mb-4"><h3 class="font-semibold">Easy</h3></div>
+  </div>
+</section>
+
+<!-- Quality Work -->
+<section class="px-8 py-16 flex flex-col md:flex-row items-center">
+  <div class="md:w-1/2 space-y-4">
+    <h2 class="text-3xl font-bold text-gray-900">Designed & Developed by Professionals.</h2>
+    <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quam cupiditate commodi qui excepturi laborum adipisci officiis.</p>
+    <button class="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700">Learn More</button>
+  </div>
+  <div class="md:w-1/2 mt-8 md:mt-0 flex space-x-4">
+    <img src="hero-screenshot-1.40a097b525c2f8c9808e.png" class="w-1/2 rounded-lg shadow-lg">
+    <img src="hero-screenshot-2.241aac1fbc66db29d873.png" class="w-1/2 rounded-lg shadow-lg">
+  </div>
+</section>
 
   <!-- Steps -->
   <section class="steps">
@@ -153,7 +123,7 @@
       </div>
     </div>
   </section>
-
+  
   <!-- Pricing -->
   <section class="pricing" id="pricing">
     <div class="container">
