@@ -1,102 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Beautiful React Templates for you" />
-    <title>My SaaS - React Landing Page</title>
-    <link rel="icon" href="/assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" />
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My SaaS - HTML Landing Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-    <!-- Example static fallback content -->
-    <section class="hero">
-      <header>
-        <img
-          src="/assets/logo.2c489fc453a1783cbadacf914efa3df6.svg"
-          alt="Logo"
-          class="logo"
-        />
-        <nav>
-          <a href="#">About</a>
-          <a href="#">Blog</a>
-          <a href="#">Pricing</a>
-          <a href="#">Contact</a>
-          <button class="login">Login</button>
-          <button class="signup">Sign Up</button>
-        </nav>
-      </header>
+<body>
+  <header>
+    <img src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="Logo" />
+    <nav>
+      <a href="#">About</a>
+      <a href="#">Blog</a>
+      <a href="#">Pricing</a>
+      <a href="#">Contact</a>
+      <button>Login</button>
+      <button>Sign Up</button>
+    </nav>
+  </header>
 
-      <div class="hero-content">
-        <h1>Beautiful React Templates <span>for you.</span></h1>
-        <p>
-          Our templates are easy to setup, understand and customize. Fully modular
-          components with a variety of pages and components.
-        </p>
+  <section class="hero">
+    <h1>Beautiful Templates for you.</h1>
+    <p>
+      Our templates are easy to setup, understand, and customize. Fully modular
+      components with a variety of pages and features.
+    </p>
 
-        <form>
-          <input type="email" placeholder="Your E-mail Address" />
-          <button type="submit">Get Started</button>
-        </form>
+    <form>
+      <input type="email" placeholder="Your E-mail Address" />
+      <button type="submit">Get Started</button>
+    </form>
 
-        <img
-          src="/assets/press-logos.png"
-          alt="Trusted Customers"
-          class="press-logos"
-        />
+    <img src="./assets/press-logos.png" alt="Trusted Customers" class="press-logos" />
 
-        <div class="hero-images">
-          <img
-            src="/assets/hero-screenshot-1.40a097b525c2f8c9808e.png"
-            alt="App Screenshot 1"
-          />
-          <img
-            src="/assets/hero-screenshot-2.241aac1fbc66db29d873.png"
-            alt="App Screenshot 2"
-          />
-        </div>
+    <div class="hero-images">
+      <img src="./assets/hero-screenshot-1.40a097b525c2f8c9808e.png" alt="App Screenshot 1" />
+      <img src="./assets/hero-screenshot-2.241aac1fbc66db29d873.png" alt="App Screenshot 2" />
+    </div>
+  </section>
+
+  <section class="features">
+    <h2>We Have Amazing Service.</h2>
+    <div class="feature-list">
+      <div class="feature">
+        <img src="./assets/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg" alt="Secure" />
+        <h3>Secure</h3>
       </div>
-    </section>
-
-    <!-- Example feature section -->
-    <section class="features">
-      <h2>We Have Amazing Service.</h2>
-      <div class="feature-list">
-        <div class="feature">
-          <img src="/assets/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg" alt="Secure" />
-          <h3>Secure</h3>
-        </div>
-        <div class="feature">
-          <img src="/assets/support-icon.f9253ffa8cb6ffde5bbaa05eb5136375.svg" alt="Support" />
-          <h3>24/7 Support</h3>
-        </div>
-        <div class="feature">
-          <img src="/assets/customize-icon.367468c90fd796009b97fbfba67b2c6a.svg" alt="Customizable" />
-          <h3>Customizable</h3>
-        </div>
-        <div class="feature">
-          <img src="/assets/reliable-icon.1367510a8f0a1bec76dc425d25f92f43.svg" alt="Reliable" />
-          <h3>Reliable</h3>
-        </div>
-        <div class="feature">
-          <img src="/assets/fast-icon.dbb971a73d4805d2fc3bcdacdb55beba.svg" alt="Fast" />
-          <h3>Fast</h3>
-        </div>
-        <div class="feature">
-          <img src="/assets/simple-icon.673b7e1750b2a4ef32907fc164828d00.svg" alt="Easy" />
-          <h3>Easy</h3>
-        </div>
+      <div class="feature">
+        <img src="./assets/support-icon.f9253ffa8cb6ffde5bbaa05eb5136375.svg" alt="Support" />
+        <h3>24/7 Support</h3>
       </div>
-    </section>
+      <div class="feature">
+        <img src="./assets/customize-icon.367468c90fd796009b97fbfba67b2c6a.svg" alt="Customizable" />
+        <h3>Customizable</h3>
+      </div>
+      <div class="feature">
+        <img src="./assets/reliable-icon.1367510a8f0a1bec76dc425d25f92f43.svg" alt="Reliable" />
+        <h3>Reliable</h3>
+      </div>
+      <div class="feature">
+        <img src="./assets/fast-icon.dbb971a73d4805d2fc3bcdacdb55beba.svg" alt="Fast" />
+        <h3>Fast</h3>
+      </div>
+      <div class="feature">
+        <img src="./assets/simple-icon.673b7e1750b2a4ef32907fc164828d00.svg" alt="Easy" />
+        <h3>Easy</h3>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-      <img
-        src="/assets/logo-light.d9a5d1b5be5ea077b26864fdfc2e96a4.svg"
-        alt="My SaaS Logo"
-      />
-      <p>© 2025 My SaaS. All Rights Reserved.</p>
-    </footer>
-  </body>
+  <footer>
+    <img src="./assets/logo-light.d9a5d1b5be5ea077b26864fdfc2e96a4.svg" alt="My SaaS Logo" />
+    <p>© 2025 My SaaS. All Rights Reserved.</p>
+  </footer>
+</body>
 </html>
