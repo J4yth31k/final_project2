@@ -3,195 +3,169 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Landing Page</title>
+  <title>MySite — Beautiful React Templates</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <img src="assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="Logo" />
-    <h1>MySite</h1>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="Logo" />
+      <h1>MySite</h1>
+    </div>
     <nav>
-      <a href="#features">Features</a>
-      <a href="#quality">Quality</a>
-      <a href="#steps">Steps</a>
-      <a href="#values">Values</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#get-started">Get Started</a>
+      <a href="#">About</a>
+      <a href="#">Blog</a>
+      <a href="#">Pricing</a>
+      <a href="#">Contact Us</a>
+      <a href="#">Login</a>
+      <button class="btn-primary">Sign Up</button>
     </nav>
-    <button>Menu</button>
   </header>
 
   <!-- Hero Section -->
-  <section id="hero">
-    <h2>Build Beautiful Websites</h2>
-    <p>Fast, modern, responsive design with our landing page template.</p>
-
-    <div class="hero-cta">
-      <input type="email" placeholder="Enter your email" />
-      <button>Subscribe</button>
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Beautiful <span class="highlight">React</span> Templates <br />for <span class="highlight">you.</span></h1>
+      <p>Our templates are easy to set up, understand and customize. Fully modular components with a variety of pages and layouts.</p>
+      <div class="hero-form">
+        <input type="email" placeholder="Your E-mail Address" />
+        <button class="btn-primary">Get Started</button>
+      </div>
+      <div class="trusted">
+        <p>OUR TRUSTED CUSTOMERS</p>
+        <img src="assets/press-logos.png" alt="Company Logos" />
+      </div>
     </div>
-
-    <p class="trusted">Trusted by top companies</p>
-    <!-- Match example: customers logo strip -->
-    <img src="assets/customers-logo-strip.680ac7c2e8ae28161d2c.png" alt="Trusted Company Logos" class="customers" />
-
-    <!-- Match example: desk illustration -->
-    <img src="assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg" alt="Design Illustration" class="hero-illustration" />
+    <div class="hero-image">
+      <img src="assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg" alt="Hero Illustration" />
+    </div>
   </section>
 
   <!-- Features -->
-  <section id="features">
-    <h2>Awesome Features</h2>
-    <p>Everything you need to create stunning landing pages.</p>
-
-    <div class="feature">
-      <img src="assets/fast-icon.dbb971a73d4805d2fc3bcdacdb55beba.svg" alt="Fast Icon" />
-      <h3>Fast</h3>
-      <p>Optimized for speed and performance.</p>
-    </div>
-
-    <div class="feature">
-      <img src="assets/simple-icon.673b7e1750b2a4ef32907fc164828d00.svg" alt="Responsive Icon" />
-      <h3>Responsive</h3>
-      <p>Looks great on any device.</p>
-    </div>
-
-    <div class="feature">
-      <img src="assets/customize-icon.367468c90fd796009b97fbfba67b2c6a.svg" alt="Customizable Icon" />
-      <h3>Customizable</h3>
-      <p>Easily adapt it to your needs.</p>
+  <section class="features">
+    <p class="section-label">FEATURES</p>
+    <h2>We Have Amazing <span class="highlight">Service.</span></h2>
+    <p class="section-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div class="features-grid">
+      <div class="feature"><img src="assets/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg" alt=""><h3>Secure</h3><p>Lorem ipsum dolor amet sit ceali ut enim ad minim veniam, quis nostrud.</p></div>
+      <div class="feature"><img src="assets/support-icon.f9253ffa8cb6ffde5bbaa05eb5136375.svg" alt=""><h3>24/7 Support</h3><p>Lorem ipsum dolor amet sit ceali ut enim ad minim veniam, quis nostrud.</p></div>
+      <div class="feature"><img src="assets/customize-icon.367468c90fd796009b97fbfba67b2c6a.svg" alt=""><h3>Customizable</h3><p>Lorem ipsum dolor amet sit ceali ut enim ad minim veniam, quis nostrud.</p></div>
+      <div class="feature"><img src="assets/reliable-icon.1367510a8f0a1bec76dc425d25f92f43.svg" alt=""><h3>Reliable</h3><p>Lorem ipsum dolor amet sit ceali ut enim ad minim veniam, quis nostrud.</p></div>
+      <div class="feature"><img src="assets/fast-icon.dbb971a73d4805d2fc3bcdacdb55beba.svg" alt=""><h3>Fast</h3><p>Lorem ipsum dolor amet sit ceali ut enim ad minim veniam, quis nostrud.</p></div>
+      <div class="feature"><img src="assets/simple-icon.673b7e1750b2a4ef32907fc164828d00.svg" alt=""><h3>Easy</h3><p>Lorem ipsum dolor amet sit ceali ut enim ad minim veniam, quis nostrud.</p></div>
     </div>
   </section>
 
-  <!-- Quality Section -->
-  <section id="quality">
-    <h2>Quality Work</h2>
-    <p>We deliver high-quality web solutions with attention to detail and performance.</p>
-    <button>Learn More</button>
-
-    <!-- Match example: hero screenshots side by side -->
-    <div class="quality-images">
-      <img src="assets/hero-screenshot-1.40a097b525c2f8c9808e.png" alt="Dashboard Example 1" />
-      <img src="assets/hero-screenshot-2.241aac1fbc66db29d873.png" alt="Dashboard Example 2" />
+  <!-- Quality Work -->
+  <section class="quality">
+    <div class="quality-text">
+      <p class="section-label">QUALITY WORK</p>
+      <h2>Designed & Developed by <span class="highlight">Professionals.</span></h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quam cupiditate commodi qui excepturi laborum adipisci officiis corporis possimus reiciendis?</p>
+      <button class="btn-primary">Learn More</button>
+    </div>
+    <div class="quality-img">
+      <img src="assets/hero-screenshot-1.40a097b525c2f8c9808e.png" alt="Screenshot" />
     </div>
   </section>
 
-  <!-- Steps Section -->
-  <section id="steps">
-    <h2>How It Works</h2>
-    <p>Easy to get started.</p>
-
-    <div class="step">
-      <h3>1. Sign Up</h3>
-      <p>Create your account to get started.</p>
+  <!-- Steps -->
+  <section class="steps">
+    <div class="steps-img">
+      <img src="assets/hero-screenshot-2.241aac1fbc66db29d873.png" alt="Steps Image" />
     </div>
-    <div class="step">
-      <h3>2. Customize</h3>
-      <p>Edit and adapt your landing page easily.</p>
-    </div>
-    <div class="step">
-      <h3>3. Launch</h3>
-      <p>Publish and share your site.</p>
+    <div class="steps-text">
+      <p class="section-label">STEPS</p>
+      <h2>Easy to <span class="highlight">Get Started.</span></h2>
+      <div class="step"><span>01</span><div><h3>Register</h3><p>Create an account with us using Google or Facebook.</p></div></div>
+      <div class="step"><span>02</span><div><h3>Download</h3><p>Browse and download the template that you like from the marketplace.</p></div></div>
+      <div class="step"><span>03</span><div><h3>Run</h3><p>Follow the instructions to set up and customize the template to your needs.</p></div></div>
     </div>
   </section>
 
-  <!-- Values Section -->
-  <section id="values">
-    <h2>Our Values</h2>
-    <p>We believe in quality, integrity, and creativity in every project we deliver.</p>
-
-    <div class="value">
-      <img src="assets/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg" alt="Integrity Icon" />
-      <h3>Integrity</h3>
-      <p>We do the right thing, always.</p>
+  <!-- Values -->
+  <section class="values">
+    <div class="values-text">
+      <p class="section-label">VALUES</p>
+      <h2>We Always Abide by Our <span class="highlight">Principles.</span></h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <div class="value-points">
+        <div class="value"><h3>Affordable</h3><p>We promise to offer you the best rate we can – at par with the industry standard.</p></div>
+        <div class="value"><h3>Professionalism</h3><p>We assure you that our templates are designed and created by professionals.</p></div>
+      </div>
+      <button class="btn-primary">Learn More</button>
     </div>
-
-    <div class="value">
-      <img src="assets/prototype-illustration.21bc4b3f612a2f257c3d361067582485.svg" alt="Prototype Illustration" class="values-illustration" />
-      <h3>Creativity</h3>
-      <p>We bring ideas to life.</p>
-    </div>
-  </section>
-
-  <!-- Pricing Section -->
-  <section id="pricing">
-    <h2>Choose Your Plan</h2>
-    <p>Flexible pricing plans for individuals and teams.</p>
-
-    <div class="plan">
-      <h3>Basic</h3>
-      <p>$19 / month</p>
-      <ul>
-        <li>5 Projects</li>
-        <li>Basic Support</li>
-      </ul>
-      <button>Get Started</button>
-    </div>
-
-    <div class="plan">
-      <h3>Pro</h3>
-      <p>$49 / month</p>
-      <ul>
-        <li>20 Projects</li>
-        <li>Priority Support</li>
-      </ul>
-      <button>Get Started</button>
-    </div>
-
-    <div class="plan">
-      <h3>Enterprise</h3>
-      <p>$99 / month</p>
-      <ul>
-        <li>Unlimited Projects</li>
-        <li>24/7 Support</li>
-      </ul>
-      <button>Get Started</button>
+    <div class="values-img">
+      <img src="assets/prototype-illustration.21bc4b3f612a2f257c3d361067582485.svg" alt="Values Illustration" />
     </div>
   </section>
 
-  <!-- Testimonials Section -->
-  <section id="testimonials">
-    <!-- Match example: love illustration before testimonials -->
-    <img src="assets/love-illustration.c759090fa833369ad6ffb6eb19cacb3e.svg" alt="Love Illustration" class="love-illustration" />
-
-    <h2>What Our Clients Say</h2>
-    <blockquote>
-      "This template made our website look amazing in just a few days!"
-    </blockquote>
-    <img src="assets/photo-1494790108377-be9c29b29330.avif" alt="Client Photo" />
-    <p><strong>Jane Doe</strong> — CEO, Company</p>
+  <!-- Pricing -->
+  <section class="pricing">
+    <p class="section-label">PRICING</p>
+    <h2>Reasonable & Flexible <span class="highlight">Plans.</span></h2>
+    <p class="section-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div class="pricing-grid">
+      <div class="plan"><h3>Personal</h3><p class="price">$17.99</p><p class="period">Monthly</p><ul><li>30 Templates</li><li>7 Landing Pages</li><li>12 Internal Pages</li><li>Basic Assistance</li></ul><button class="btn-outline">Buy Now</button></div>
+      <div class="plan featured"><h3>Business</h3><p class="price">$37.99</p><p class="period">Monthly</p><ul><li>60 Templates</li><li>15 Landing Pages</li><li>22 Internal Pages</li><li>Priority Assistance</li></ul><button class="btn-primary">Buy Now</button></div>
+      <div class="plan"><h3>Enterprise</h3><p class="price">$57.99</p><p class="period">Monthly</p><ul><li>90 Templates</li><li>27 Landing Pages</li><li>37 Internal Pages</li><li>Personal Assistance</li></ul><button class="btn-red">Buy Now</button></div>
+    </div>
   </section>
 
-  <!-- Call to Action -->
-  <section id="get-started">
-    <h2>Ready to get started?</h2>
-    <button>Start Free</button>
-    <button>Learn More</button>
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <p class="section-label">TESTIMONIALS</p>
+    <h2>Our Clients <span class="highlight">Love Us.</span></h2>
+    <p class="section-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div class="testimonial">
+      <img src="assets/love-illustration.c759090fa833369ad6ffb6eb19cacb3e.svg" alt="Love Illustration" class="testimonial-img" />
+      <div class="testimonial-text">
+        <h3>⭐️⭐️⭐️⭐️⭐️</h3>
+        <h4>Amazing User Experience</h4>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <div class="profile">
+          <img src="assets/photo-1494790108377-be9c29b29330.avif" alt="Client Photo">
+          <div><h5>Charlotte Hale</h5><p>Director, Delos Inc.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <h2>Developers all over the world are happily using MySite.</h2>
+    <div class="cta-buttons">
+      <button class="btn-orange">Get Started</button>
+      <button class="btn-outline-light">Contact Us</button>
+    </div>
   </section>
 
   <!-- Footer -->
-  <footer>
-    <div class="footer-logo">
-      <img src="assets/logo-light.d9a5d1b5be5ea077b26864fdfc2e96a4.svg" alt="Footer Logo" />
-      <h3>MySite</h3>
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <h4>Main</h4>
+        <a href="#">Blog</a><a href="#">FAQs</a><a href="#">Support</a><a href="#">About Us</a>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <a href="#">Log In</a><a href="#">Personal</a><a href="#">Business</a><a href="#">Team</a>
+      </div>
+      <div>
+        <h4>Press</h4>
+        <a href="#">Logos</a><a href="#">Events</a><a href="#">Stories</a><a href="#">Office</a>
+      </div>
+      <div>
+        <h4>Team</h4>
+        <a href="#">Career</a><a href="#">Founders</a><a href="#">Culture</a><a href="#">Onboarding</a>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <a href="#">GDPR</a><a href="#">Privacy Policy</a><a href="#">Terms</a><a href="#">Disclaimer</a>
+      </div>
     </div>
-
-    <div class="footer-links">
-      <h4>Company</h4>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-    </div>
-
-    <div class="social">
-      <h4>Follow Us</h4>
-      <a href="#">FB</a>
-      <a href="#">TW</a>
-    </div>
-
-    <p>© 2025 MySite. All rights reserved.</p>
   </footer>
-
 </body>
 </html>
