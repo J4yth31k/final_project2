@@ -1,301 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NovaTech | Modern Business Solutions</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-  <body>
-    <!-- NAVIGATION -->
-    <header>
-      <nav class="nav">
-        <div class="nav__logo">
-          <img
-            src="./assets/logo-light.d9a5d1b5be5ea077b26864fdfc2e96a4.svg"
-            alt="NovaTech Logo"
-            class="nav__logo--img"
-          />
-          <h2 class="nav__logo--text">NovaTech</h2>
-        </div>
-        <ul class="nav__links">
-          <li><a href="#features" class="nav__link">Features</a></li>
-          <li><a href="#pricing" class="nav__link">Pricing</a></li>
-          <li><a href="#testimonials" class="nav__link">Testimonials</a></li>
-          <li><a href="#contact" class="nav__link">Contact</a></li>
-        </ul>
-        <div class="nav__buttons">
-          <button class="btn btn--outline">Login</button>
-          <button class="btn btn--primary">Sign Up</button>
-        </div>
-        <div class="nav__menu">
-          <i class="fas fa-bars"></i>
-        </div>
-      </nav>
-    </header>
+  <!-- NAVIGATION -->
+  <nav class="nav__container">
+    <div class="nav__logo">
+      <img src="logo.png" alt="Logo" class="nav__logo--img">
+      <span class="nav__logo--title">MySite</span>
+    </div>
+    <div class="nav__links">
+      <a href="#features" class="nav__link">Features</a>
+      <a href="#quality" class="nav__link">Quality</a>
+      <a href="#steps" class="nav__link">Steps</a>
+      <a href="#values" class="nav__link">Values</a>
+      <a href="#pricing" class="nav__link">Pricing</a>
+      <a href="#start" class="nav__link nav__link--primary">Get Started</a>
+    </div>
+    <button class="btn__menu">Menu</button>
+  </nav>
 
-    <!-- HERO SECTION -->
-    <section id="hero">
-      <div class="container hero__container">
-        <div class="hero__text">
-          <h1>
-            Empower Your Business with <span class="purple">NovaTech</span>
-          </h1>
-          <p>
-            We provide cutting-edge digital solutions to help your business
-            scale faster, smarter, and better. From startups to enterprises,
-            NovaTech delivers technology that drives success.
-          </p>
-          <div class="hero__buttons">
-            <button class="btn btn--primary">Get Started</button>
-            <button class="btn btn--outline">Learn More</button>
-          </div>
+  <!-- HEADER -->
+  <header class="container">
+    <div class="row">
+      <div class="header__description">
+        <h1>Build Beautiful Websites</h1>
+        <p class="header__description--para">Fast, modern, responsive design with our landing page template.</p>
+        <div class="header__email">
+          <input type="email" placeholder="Enter your email" class="header__email--input">
+          <button class="header__email--btn">Subscribe</button>
         </div>
-        <div class="hero__img">
-          <img
-            src="./assets/hero-illustration.svg"
-            alt="NovaTech Illustration"
-          />
-        </div>
-      </div>
-    </section>
-
-    <!-- FEATURES SECTION -->
-    <section id="features">
-      <div class="container">
-        <div class="section__header">
-          <div class="section__tag">Features</div>
-          <h2 class="section__title">
-            What Makes <span class="purple">NovaTech</span> Different?
-          </h2>
-          <p class="section__para">
-            We combine modern design with powerful technology to deliver the
-            best user experiences possible.
-          </p>
-        </div>
-        <div class="features__grid">
-          <div class="feature">
-            <i class="fas fa-bolt feature__icon"></i>
-            <h3>Fast Performance</h3>
-            <p>
-              Optimized infrastructure ensures your applications run
-              lightning-fast and efficiently.
-            </p>
-          </div>
-          <div class="feature">
-            <i class="fas fa-lock feature__icon"></i>
-            <h3>Secure Platform</h3>
-            <p>
-              Built with security-first principles to protect your business data
-              and your customers’ trust.
-            </p>
-          </div>
-          <div class="feature">
-            <i class="fas fa-layer-group feature__icon"></i>
-            <h3>Scalable Design</h3>
-            <p>
-              Easily scale your business as it grows — our platform evolves with
-              your needs.
-            </p>
-          </div>
-          <div class="feature">
-            <i class="fas fa-headset feature__icon"></i>
-            <h3>24/7 Support</h3>
-            <p>
-              Our dedicated support team is available around the clock to help
-              you succeed.
-            </p>
+        <div class="header__customers">
+          <span class="header__customers--title">Trusted by top companies</span>
+          <div class="header__customers--logos">
+            <img src="company1.png" alt="Company Logo">
+            <img src="company2.png" alt="Company Logo">
+            <img src="company3.png" alt="Company Logo">
           </div>
         </div>
       </div>
-    </section>
+      <div class="header__img--wrapper">
+        <img src="header-image.png" alt="Header Image" class="header__img">
+      </div>
+    </div>
+  </header>
 
-    <!-- PRICING SECTION -->
-    <section id="pricing">
-      <div class="container">
-        <div class="section__header">
-          <div class="section__tag">Pricing</div>
-          <h2 class="section__title">
-            Choose the Perfect Plan for <span class="purple">You</span>
-          </h2>
-          <p class="section__para">
-            Simple, transparent pricing that grows with your business.
-          </p>
+  <!-- FEATURES -->
+  <section id="features" class="container">
+    <div class="row__narrow">
+      <span class="section__tag">Features</span>
+      <h2 class="section__title">Awesome Features</h2>
+      <p class="section__para">Everything you need to create stunning landing pages.</p>
+      <div class="features">
+        <div class="feature">
+          <div class="feature__row">
+            <div class="feature__img--wrapper">
+              <img src="feature1.png" alt="Feature" class="feature__img">
+            </div>
+            <div class="feature__text">
+              <h3 class="feature__title">Fast</h3>
+              <p class="feature__para">Optimized for speed and performance.</p>
+            </div>
+          </div>
         </div>
-        <div class="pricing__plans">
-          <div class="plan">
-            <h3>Starter</h3>
-            <p class="plan__price">$19<span>/month</span></p>
-            <ul>
-              <li>Basic analytics</li>
-              <li>Email support</li>
-              <li>Up to 3 projects</li>
-            </ul>
-            <button class="btn btn--outline">Choose Plan</button>
+        <div class="feature">
+          <div class="feature__row">
+            <div class="feature__img--wrapper">
+              <img src="feature2.png" alt="Feature" class="feature__img">
+            </div>
+            <div class="feature__text">
+              <h3 class="feature__title">Responsive</h3>
+              <p class="feature__para">Looks great on any device.</p>
+            </div>
           </div>
-          <div class="plan plan--highlighted">
-            <h3>Professional</h3>
-            <p class="plan__price">$49<span>/month</span></p>
-            <ul>
-              <li>Advanced analytics</li>
-              <li>Priority support</li>
-              <li>Unlimited projects</li>
-            </ul>
-            <button class="btn btn--primary">Choose Plan</button>
-          </div>
-          <div class="plan">
-            <h3>Enterprise</h3>
-            <p class="plan__price">Custom</p>
-            <ul>
-              <li>Full analytics suite</li>
-              <li>Dedicated account manager</li>
-              <li>Custom integrations</li>
-            </ul>
-            <button class="btn btn--outline">Contact Sales</button>
+        </div>
+        <div class="feature">
+          <div class="feature__row">
+            <div class="feature__img--wrapper">
+              <img src="feature3.png" alt="Feature" class="feature__img">
+            </div>
+            <div class="feature__text">
+              <h3 class="feature__title">Customizable</h3>
+              <p class="feature__para">Easily adapt it to your needs.</p>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- TESTIMONIALS SECTION -->
-    <section id="testimonials">
-      <div class="container">
-        <div class="row">
-          <img
-            src="./assets/love-illustration.c759090fa833369ad6ffb6eb19cacb3e.svg"
-            alt=""
-            class="testimonials__img"
-          />
-          <div class="testimonials__description">
-            <div class="section__tag">testimonials</div>
-            <h2 class="section__title">
-              Our Clients <span class="purple">Love Us.</span>
-            </h2>
-            <p class="section__para">
-              Here’s what people are saying about NovaTech — we’re proud to help
-              businesses grow smarter and faster.
-            </p>
-            <div class="testimonial">
-              <div class="testimonial__rating">
-                <i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                ><i class="fas fa-star"></i>
-              </div>
-              <h3 class="testimonial__title">Amazing Experience</h3>
-              <p class="testimonial__para">
-                NovaTech helped us streamline our workflow and double our
-                productivity in just two months. Their platform is intuitive and
-                their team is incredibly responsive.
-              </p>
-              <div class="testimonial__bottom">
-                <div class="testimonial__profile">
-                  <img
-                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=facearea&w=512&h=512&q=80"
-                    class="testimonial__img"
-                  />
-                  <div class="testimonial__details">
-                    <div class="testimonial__name">Charlotte Hale</div>
-                    <div class="testimonial__role">Director, Delos Inc.</div>
-                  </div>
-                </div>
-                <div class="testimonial__buttons">
-                  <button class="testimonial__button">
-                    <i class="fas fa-arrow-left"></i>
-                  </button>
-                  <div class="divider"></div>
-                  <button class="testimonial__button">
-                    <i class="fas fa-arrow-right"></i>
-                  </button>
-                </div>
+  <!-- QUALITY WORK -->
+  <section id="quality" class="container">
+    <div class="row">
+      <div class="quality__description">
+        <h2 class="section__title">Quality Work</h2>
+        <p>We deliver high-quality web solutions with attention to detail and performance.</p>
+        <button class="btn">Learn More</button>
+      </div>
+      <div class="quality__img--wrapper">
+        <img src="quality-image.png" alt="Quality" class="quality__img">
+      </div>
+    </div>
+  </section>
+
+  <!-- STEPS -->
+  <section id="steps" class="container">
+    <div class="row">
+      <div class="steps__img--wrapper">
+        <img src="steps-image.png" alt="Steps" class="steps__img">
+      </div>
+      <div class="steps__description">
+        <h2 class="section__title">How It Works</h2>
+        <div class="step">
+          <span class="step__number">1</span>
+          <div class="step__description">
+            <h3 class="step__title">Sign Up</h3>
+            <p class="step__para">Create your account to get started.</p>
+          </div>
+        </div>
+        <div class="step">
+          <span class="step__number">2</span>
+          <div class="step__description">
+            <h3 class="step__title">Customize</h3>
+            <p class="step__para">Edit and adapt your landing page easily.</p>
+          </div>
+        </div>
+        <div class="step">
+          <span class="step__number">3</span>
+          <div class="step__description">
+            <h3 class="step__title">Launch</h3>
+            <p class="step__para">Publish and share your site.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section id="values" class="container">
+    <div class="row">
+      <div class="values__description">
+        <h2 class="section__title">Our Values</h2>
+        <p>We believe in quality, integrity, and creativity in every project we deliver.</p>
+      </div>
+      <div class="values__list">
+        <div class="value">
+          <div class="value__title">
+            <div class="value__img--wrapper">
+              <img src="value1.png" alt="Value" class="value__img">
+            </div>
+            <span class="value__name">Integrity</span>
+          </div>
+          <p class="value__para">We do the right thing, always.</p>
+        </div>
+        <div class="value">
+          <div class="value__title">
+            <div class="value__img--wrapper">
+              <img src="value2.png" alt="Value" class="value__img">
+            </div>
+            <span class="value__name">Creativity</span>
+          </div>
+          <p class="value__para">We bring ideas to life.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" class="container">
+    <div class="row">
+      <span class="section__tag">Pricing</span>
+      <h2 class="section__title">Choose Your Plan</h2>
+      <p class="section__para">Flexible pricing plans for individuals and teams.</p>
+      <div class="plans">
+        <div class="plan">
+          <div class="plan__stripe"></div>
+          <div class="plan__top">
+            <span class="plan__name">Basic</span>
+            <span class="plan__price">$19</span>
+            <span class="plan__duration">/month</span>
+          </div>
+          <div class="plan__middle">
+            <p class="plan__feature">5 Projects</p>
+            <p class="plan__feature">Basic Support</p>
+          </div>
+          <div class="plan__bottom">
+            <button class="plan__button">Get Started</button>
+          </div>
+        </div>
+        <div class="plan">
+          <div class="plan__stripe"></div>
+          <div class="plan__top">
+            <span class="plan__name">Pro</span>
+            <span class="plan__price">$49</span>
+            <span class="plan__duration">/month</span>
+          </div>
+          <div class="plan__middle">
+            <p class="plan__feature">20 Projects</p>
+            <p class="plan__feature">Priority Support</p>
+          </div>
+          <div class="plan__bottom">
+            <button class="plan__button">Get Started</button>
+          </div>
+        </div>
+        <div class="plan">
+          <div class="plan__stripe"></div>
+          <div class="plan__top">
+            <span class="plan__name">Enterprise</span>
+            <span class="plan__price">$99</span>
+            <span class="plan__duration">/month</span>
+          </div>
+          <div class="plan__middle">
+            <p class="plan__feature">Unlimited Projects</p>
+            <p class="plan__feature">24/7 Support</p>
+          </div>
+          <div class="plan__bottom">
+            <button class="plan__button">Get Started</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="container">
+    <div class="row">
+      <div class="testimonials__img">
+        <img src="testimonial-image.png" alt="Testimonials">
+      </div>
+      <div class="testimonials__description">
+        <span class="section__tag">Testimonials</span>
+        <h2 class="section__title">What Our Clients Say</h2>
+        <div class="testimonial">
+          <p class="testimonial__para">"This template made our website look amazing in just a few days!"</p>
+          <div class="testimonial__bottom">
+            <div class="testimonial__profile">
+              <img src="profile1.png" alt="Client" class="testimonial__img">
+              <div class="testimonial__details">
+                <span class="testimonial__name">Jane Doe</span>
+                <span class="testimonial__role">CEO, Company</span>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- CTA / START SECTION -->
-    <section id="start">
-      <div class="container start__container">
-        <div class="start__row">
-          <div class="start__title">
-            Developers all over the world are happily using NovaTech.
-          </div>
-          <div class="start__buttons">
-            <button class="btn btn--primary">Get Started</button>
-            <button class="btn btn--outline">Contact Us</button>
-          </div>
+  <!-- CALL TO ACTION -->
+  <section id="start" class="start__container">
+    <div class="start__row">
+      <h2 class="start__title">Ready to get started?</h2>
+      <div class="start__buttons">
+        <button class="start__button">Start Free</button>
+        <button class="start__button">Learn More</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer__columns">
+      <div class="footer__column">
+        <span class="footer__column--title">Company</span>
+        <a class="footer__column--link" href="#">About</a>
+        <a class="footer__column--link" href="#">Contact</a>
+      </div>
+      <div class="footer__column">
+        <span class="footer__column--title">Follow Us</span>
+        <div class="footer__socials">
+          <a href="#" class="footer__social--link">FB</a>
+          <a href="#" class="footer__social--link">TW</a>
         </div>
       </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-      <div class="row footer__row">
-        <div class="footer__columns">
-          <div class="footer__column">
-            <div class="footer__column--title">MAIN</div>
-            <a class="footer__column--link">Blog</a>
-            <a class="footer__column--link">FAQs</a>
-            <a class="footer__column--link">Support</a>
-            <a class="footer__column--link">About Us</a>
-          </div>
-          <div class="footer__column">
-            <div class="footer__column--title">PRODUCT</div>
-            <a class="footer__column--link">Log In</a>
-            <a class="footer__column--link">Personal</a>
-            <a class="footer__column--link">Business</a>
-            <a class="footer__column--link">Team</a>
-          </div>
-          <div class="footer__column">
-            <div class="footer__column--title">PRESS</div>
-            <a class="footer__column--link">Logos</a>
-            <a class="footer__column--link">Events</a>
-            <a class="footer__column--link">Stories</a>
-            <a class="footer__column--link">Office</a>
-          </div>
-          <div class="footer__column">
-            <div class="footer__column--title">TEAM</div>
-            <a class="footer__column--link">Career</a>
-            <a class="footer__column--link">Founders</a>
-            <a class="footer__column--link">Culture</a>
-            <a class="footer__column--link">Onboarding</a>
-          </div>
-          <div class="footer__column">
-            <div class="footer__column--title">LEGAL</div>
-            <a class="footer__column--link">GDPR</a>
-            <a class="footer__column--link">Privacy Policy</a>
-            <a class="footer__column--link">Terms of Service</a>
-            <a class="footer__column--link">Disclaimer</a>
-          </div>
-        </div>
-
-        <div class="footer__divider"></div>
-
-        <div class="footer__bottom">
-          <div class="footer__logo">
-            <img
-              src="./assets/logo-light.d9a5d1b5be5ea077b26864fdfc2e96a4.svg"
-              alt="NovaTech Logo"
-              class="footer__logo--img"
-            />
-            <h5 class="footer__logo--text">NovaTech Inc.</h5>
-          </div>
-          <div class="footer__copyright">
-            © 2025 NovaTech Inc. All Rights Reserved.
-          </div>
-          <div class="footer__socials">
-            <a class="footer__social--link"><i class="fab fa-facebook-f"></i></a>
-            <a class="footer__social--link"><i class="fab fa-twitter"></i></a>
-            <a class="footer__social--link"><i class="fab fa-youtube"></i></a>
-          </div>
-        </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__logo">
+        <img src="logo.png" alt="Logo" class="footer__logo--img">
+        <span class="footer__logo--text">MySite</span>
       </div>
-    </footer>
-  </body>
+      <span class="footer__copyright">© 2025 MySite. All rights reserved.</span>
+    </div>
+  </footer>
+
+</body>
 </html>
