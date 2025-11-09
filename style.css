@@ -1524,3 +1524,78 @@ footer {
     line-height: 1.5;
   }
 }
+/* ---------- FULL-WIDTH & RESPONSIVE FIX ---------- */
+
+/* Remove hard caps that constrain the layout */
+body, html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Ensure rows use full width on larger screens */
+.row,
+.row__narrow,
+.nav__container,
+.start__row {
+  width: 100%;
+  max-width: 100%;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  margin: 0 auto;
+}
+
+/* Make sure header and hero scale properly */
+header .row,
+#features .row,
+#quality .row,
+#steps .row,
+#values .row,
+#pricing .row,
+#testimonials .row,
+#start .row,
+footer .row {
+  width: 100%;
+  max-width: 100%;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+/* Let images adapt smoothly to full width */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Fix spacing for sections so they don’t shrink weirdly */
+section, header, main, footer {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Prevent sections from appearing too narrow on tablets */
+@media (max-width: 1024px) {
+  .row,
+  .row__narrow {
+    padding-left: 6vw;
+    padding-right: 6vw;
+  }
+}
+
+/* Make sure navbar and footer also stretch fully */
+nav,
+footer {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Optional: smooth padding for smaller phones */
+@media (max-width: 640px) {
+  .row,
+  .row__narrow,
+  .nav__container {
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+}
+
