@@ -37,25 +37,29 @@
   </header>
 
   <!-- ===== FEATURES ===== -->
-  <section id="features">
-    <h2>FEATURES</h2>
-    <h3>Awesome Features</h3>
-    <p>Everything you need to create stunning landing pages.</p>
+ <section id="features" class="container">
+  <p class="section-tag">FEATURES</p>
+  <h2 class="section-title">Awesome Features</h2>
+  <p class="section-sub">Everything you need to create stunning landing pages.</p>
 
-    <div>
+  <div class="features-grid">
+    <div class="feature-card">
       <img src="./assets/fast-icon.dbb971a73d4805d2fc3bcdacdb55beba.svg" alt="Fast Icon" />
-      <h4>Fast</h4>
+      <h3>Fast</h3>
       <p>Optimized for speed and performance.</p>
-
+    </div>
+    <div class="feature-card">
       <img src="./assets/simple-icon.673b7e1750b2a4ef32907fc164828d00.svg" alt="Responsive Icon" />
-      <h4>Responsive</h4>
+      <h3>Responsive</h3>
       <p>Looks great on any device.</p>
-
+    </div>
+    <div class="feature-card">
       <img src="./assets/customize-icon.367468c90fd796009b97fbfba67b2c6a.svg" alt="Customizable Icon" />
-      <h4>Customizable</h4>
+      <h3>Customizable</h3>
       <p>Easily adapt it to your needs.</p>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- ===== QUALITY WORK ===== -->
   <section id="quality">
@@ -71,77 +75,110 @@
   </section>
 
   <!-- ===== STEPS ===== -->
-  <section id="steps">
+<section id="steps" class="container split reverse">
+  <div class="split-media">
     <img src="./assets/prototype-illustration.21bc4b3f612a2f257c3d361067582485.svg" alt="Steps Illustration" />
-    <div>
-      <h2>STEPS</h2>
-      <h3>How It Works</h3>
-      <ol>
-        <li>Sign Up — Create your account to get started.</li>
-        <li>Customize — Edit and adapt your landing page easily.</li>
-        <li>Launch — Publish and share your site.</li>
-      </ol>
-    </div>
-  </section>
+  </div>
+  <div class="split-text">
+    <p class="section-tag">STEPS</p>
+    <h2 class="section-title">How It Works</h2>
+    <ol class="steps-list">
+      <li><span>01</span><div><h4>Sign Up</h4><p>Create your account to get started.</p></div></li>
+      <li><span>02</span><div><h4>Customize</h4><p>Edit and adapt your landing page easily.</p></div></li>
+      <li><span>03</span><div><h4>Launch</h4><p>Publish and share your site.</p></div></li>
+    </ol>
+  </div>
+</section>
 
   <!-- ===== VALUES ===== -->
-  <section id="values">
-    <div>
-      <h2>VALUES</h2>
-      <h3>Our Values</h3>
-      <p>We believe in quality, integrity, and creativity in every project we deliver.</p>
-      <div>
-        <img src="./assets/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg" alt="Integrity Icon" />
-        <h4>Integrity</h4>
-        <p>We do the right thing, always.</p>
+  <section id="values" class="container split">
+  <div class="split-text">
+    <p class="section-tag">VALUES</p>
+    <h2 class="section-title">Our Values</h2>
+    <p>We believe in quality, integrity, and creativity in every project we deliver.</p>
 
-        <img src="./assets/reliable-icon.1367510a8f0a1bec76dc425d25f92f43.svg" alt="Creativity Icon" />
-        <h4>Creativity</h4>
-        <p>We bring ideas to life.</p>
+    <div class="values-pair">
+      <div class="value-item">
+        <div class="value-icon">
+          <img src="./assets/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg" alt="Integrity Icon" />
+        </div>
+        <div>
+          <h4>Integrity</h4>
+          <p>We do the right thing, always.</p>
+        </div>
       </div>
-      <button>Learn More</button>
+      <div class="value-item">
+        <div class="value-icon">
+          <img src="./assets/reliable-icon.1367510a8f0a1bec76dc425d25f92f43.svg" alt="Creativity Icon" />
+        </div>
+        <div>
+          <h4>Creativity</h4>
+          <p>We bring ideas to life.</p>
+        </div>
+      </div>
     </div>
+
+    <button class="btn">Learn More</button>
+  </div>
+
+  <div class="split-media">
     <img src="./assets/love-illustration.c759090fa833369ad6ffb6eb19cacb3e.svg" alt="Values Illustration" />
-  </section>
+  </div>
+</section>
 
   <!-- ===== PRICING ===== -->
-  <section id="pricing">
-    <h2>PRICING</h2>
-    <h3>Choose Your Plan</h3>
-    <p>Flexible pricing plans for individuals and teams.</p>
+  <section id="pricing" class="container">
+  <p class="section-tag">PRICING</p>
+  <h2 class="section-title">Choose Your Plan</h2>
+  <p class="section-sub">Flexible pricing plans for individuals and teams.</p>
 
+  <div class="pricing-grid">
     <div class="plan">
-      <h4>Basic</h4>
-      <p>$19 / month</p>
-      <p>5 Projects<br />Basic Support</p>
-      <button>Get Started</button>
+      <h3>Basic</h3>
+      <p class="price">$19 <span>/ month</span></p>
+      <ul>
+        <li>5 Projects</li>
+        <li>Basic Support</li>
+      </ul>
+      <button class="btn">Get Started</button>
+    </div>
+
+    <div class="plan featured">
+      <h3>Pro</h3>
+      <p class="price">$49 <span>/ month</span></p>
+      <ul>
+        <li>20 Projects</li>
+        <li>Priority Support</li>
+      </ul>
+      <button class="btn btn-invert">Get Started</button>
     </div>
 
     <div class="plan">
-      <h4>Pro</h4>
-      <p>$49 / month</p>
-      <p>20 Projects<br />Priority Support</p>
-      <button>Get Started</button>
+      <h3>Enterprise</h3>
+      <p class="price">$99 <span>/ month</span></p>
+      <ul>
+        <li>Unlimited Projects</li>
+        <li>24/7 Support</li>
+      </ul>
+      <button class="btn">Get Started</button>
     </div>
-
-    <div class="plan">
-      <h4>Enterprise</h4>
-      <p>$99 / month</p>
-      <p>Unlimited Projects<br />24/7 Support</p>
-      <button>Get Started</button>
-    </div>
-  </section>
+  </div>
+</section>
 
   <!-- ===== TESTIMONIALS ===== -->
-  <section id="testimonials">
-    <img src="./assets/photo-1494790108377-be9c29b29330.avif" alt="Love Illustration" />
-    <div>
-      <h2>TESTIMONIALS</h2>
-      <h3>What Our Clients Say</h3>
-      <p>"This template made our website look amazing in just a few days!"</p>
+  <section id="testimonials" class="container split reverse">
+  <div class="split-media">
+    <img src="./assets/photo-1494790108377-be9c29b29330.avif" alt="Client Photo" />
+  </div>
+  <div class="split-text">
+    <p class="section-tag">TESTIMONIALS</p>
+    <h2 class="section-title">What Our Clients Say</h2>
+    <div class="testimonial-card">
+      <p class="quote">“This template made our website look amazing in just a few days!”</p>
       <h4>Jane Doe — CEO, Company</h4>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- ===== FOOTER ===== -->
   <footer>
